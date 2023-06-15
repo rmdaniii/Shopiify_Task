@@ -25,6 +25,7 @@ public class ProductViewModel extends ViewModel {
 
             @Override
             public void onFailure(Call<ArrayList<ProductsModel>> call, Throwable t) {
+
             }
         });
     }

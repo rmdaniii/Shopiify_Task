@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //viewModel (1)
+        //viewModel
         productViewModel = ViewModelProviders.of(this).get(ProductViewModel.class);
         productViewModel.getProducts();
 
-        //RecyclerView (2)
+        //RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recycler);
         final ProductAdapter adapter = new ProductAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
